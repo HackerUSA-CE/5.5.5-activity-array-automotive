@@ -1,6 +1,6 @@
-import Vehicle from "./vehicle.js";
+const VehicleModule = require('./vehicle').Vehicle
 
-class Car extends Vehicle {
+class Car extends VehicleModule {
     constructor(make, model, year, color, mileage) {
         super(make, model, year, color, mileage);
         this.maxPassengers = 5;
